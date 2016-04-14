@@ -1,12 +1,12 @@
 ---
-layout: post
-title: jQuery解构
-category: project
-description: jQuery是一个伟大作品，他的完成充满智慧，我们来一点点拆解他，去理解作者的思想精华。
+layout: 		post
+category: 		project
+title: 			项目
+description: 	做项目是为了服侍上帝
 ---
-# [{{ page.title }}][1]
-2012-01-16 By {{ site.author_info }}
 
+# [{{ page.title }}][1]
+2016-04-14 By {{ site.author_info }}
 
 [wonkerr]:    http://wonkerr.github.io  "阿科"
 [1]:    {{ page.url}}  ({{ page.title }})
