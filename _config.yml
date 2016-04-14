@@ -1,0 +1,11 @@
+auto: true
+
+markdown: rdiscount
+pygments: true
+paginate: 8
+permalink: /:title
+
+title: wonkerr.github.io
+url: http://wonkerr.github.io
+feed: /atom.xml
+author_info: <a href="http://wonkerr.github.io/">wonkerr</a>
