@@ -1,11 +1,14 @@
-auto: true
+title: 博客
+email: Arctos@163.com
+description: 阿科的博客 开发爱好者
 
-markdown: rdiscount
-pygments: true
-paginate: 8
+github_username:  wonkerr
+
+url: http://wonkerr.github.io
 permalink: /:title
 
-title: wonkerr.github.io
-url: http://wonkerr.github.io
-feed: /atom.xml
-author_info: <a href="http://wonkerr.github.io/">wonkerr</a>
+highlighter: pygments
+markdown: kramdown
+pygments: true
+paginate: 8
+
