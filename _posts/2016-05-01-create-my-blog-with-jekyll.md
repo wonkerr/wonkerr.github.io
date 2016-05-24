@@ -2,7 +2,7 @@
 layout: post
 title:  "搭建静态博客"
 date:   2016-05-01
-categories: blog
+categories: 博客
 tags: blog github jekyll
 ---
 
