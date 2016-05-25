@@ -52,13 +52,17 @@ tags: CEF Build ninja chrome chromium VS2015
 * --no-distrib 不创建发行包
 * --dry-run 输出命令，但并不实际执行这些命令
 --------------------------------------------------------------------------------
-
-
+如果环境准备好了，那么真正的构建过程很简单，执行命令 automate-git.bat 等待结束就可以了
+编译结束后，在 chromium/src/cef/binary_distrib 目录里面就可以看到三个 ZIP 包
+如果需要编译 64 位的，那么执行命令 automate-git.bat --x64-build 即可
+如果先编译了 32 位，那么需要删除 chromium/src/out 目录，否则报错
+如果代码已经下载好了，不需要更新那么可以附加上 --no-update 参数
 
 ## 相关资源
+* [Automate-git.bat](https://github.com/wonkerr/wonkerr.github.io/raw/master/static/res/automate-git.bat)
 * [Automate-git.py](https://bitbucket.org/chromiumembedded/cef/raw/master/tools/automate/automate-git.py)
 * [Python 2.7.6](https://storage.googleapis.com/chrome-infra/python276_bin.zip) 
 
 ## 参考文档
 * [版本分支与编译](https://bitbucket.org/chromiumembedded/cef/wiki/BranchesAndBuilding)
-* 
+
