@@ -24,20 +24,19 @@ tags: CEF Build ninja chrome chromium VS2015
 ## 自动脚本
 参考文档`版本分支与编译`中的自动化方法，下载 automate-git.py 文件，保存到本地构建目录中，例如 D:\Constructor\CEF\ 目录中  
 然后编写下列的批处理脚本，名字保存为 automate-git.bat 批处理文件，该脚本可以在相关资源中找到下载地址  
-```Batch
-@ IF '$%CEF_BUILD_DIR%' NEQ '$' GOTO AUTOMATE
 
-@ SET CEF_BUILD_DIR=%~dp0
-@ SET GYP_MSVS_VERSION=2015
-@ SET GYP_GENERATORS=ninja,msvs-ninja
-@ SET CEF_DEPOT_DIR=%CEF_BUILD_DIR%\depot_tools
-@ SET PATH=%CEF_DEPOT_DIR%;%CEF_BUILD_DIR%\python276_bin;%PATH%
+    @ IF '$%CEF_BUILD_DIR%' NEQ '$' GOTO AUTOMATE
 
-:AUTOMATE
-@ echo 'CEF download and build directory is %CEF_BUILD_DIR%'
-@ python automate-git.py --download-dir=%CEF_BUILD_DIR% --branch=2704 %1 %2 %3 %4
-@ REM --no-update --no-distrib --x64-build
-```
+    @ SET CEF_BUILD_DIR=%~dp0
+    @ SET GYP_MSVS_VERSION=2015
+    @ SET GYP_GENERATORS=ninja,msvs-ninja
+    @ SET CEF_DEPOT_DIR=%CEF_BUILD_DIR%\depot_tools
+    @ SET PATH=%CEF_DEPOT_DIR%;%CEF_BUILD_DIR%\python276_bin;%PATH%
+
+    :AUTOMATE
+    @ echo 'CEF download and build directory is %CEF_BUILD_DIR%'
+    @ python automate-git.py --download-dir=%CEF_BUILD_DIR% --branch=2704 %1 %2 %3 %4
+    @ REM --no-update --no-distrib --x64-build
 
 ## 设置代理
 * 如果有 VPN ，那么使用 VPN 是一个更好的办法，整个过程大约需要 12 GB 的流量，显然包月的方式更好  
