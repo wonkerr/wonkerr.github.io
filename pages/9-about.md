@@ -1,11 +1,14 @@
 ---
 layout: page
-title: 关于
 permalink: /about/
-icon: glyphicon-heart
+icon: heart
+title: 关于
 ---
 
 ### 关于我
+
+
+
 
 > 1978 出生于河南洛阳一个小农村  
 > 1997 考入`郑州大学``计算机科学与技术系`  
