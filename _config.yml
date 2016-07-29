@@ -9,9 +9,8 @@ duoshuo_shortname: wonkerr
 url: http://wonkerr.github.io
 permalink: /:year/:month-:day/:title
 
-highlighter: pygments
+highlighter: rouge
 markdown: kramdown
-pygments: true
 
 kramdown:
   input: GFM
