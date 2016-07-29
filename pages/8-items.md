@@ -1,5 +1,5 @@
 ---
-layout: demo
+layout: page
 permalink: /item/
 icon: play
 title: 项目
