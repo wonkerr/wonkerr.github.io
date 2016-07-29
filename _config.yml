@@ -1,14 +1,27 @@
-﻿title: 博客
+﻿title: 阿科博客
 email: Arctos@163.com
-description: 阿科的博客 开发爱好者
+brief-intro: 阿科的博客 开发爱好者
+description_footer: 人生旅途美景
 
 github_username: wonkerr
+duoshuo_shortname: wonkerr
 
 url: http://wonkerr.github.io
-permalink: /:title
+permalink: /:year/:month-:day/:title
 
 highlighter: pygments
 markdown: kramdown
 pygments: true
-paginate: 8
 
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+category_dir: category/
+tag_dir: tag/
+base-url: ""
+
+excerpt_separator: "\n\n\n\n"
+
+gems: [jekyll-paginate]
+paginate: 8
