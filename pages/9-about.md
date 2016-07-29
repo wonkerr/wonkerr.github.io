@@ -21,7 +21,7 @@ icon: glyphicon-heart
 
 ### 联系我
 
-* email：[Arctos@163.com](mailto:{{ site.email }})
+* EMail：[Arctos@163.com](mailto:{{ site.email }})
 * QQ：85820767
 
 ---
