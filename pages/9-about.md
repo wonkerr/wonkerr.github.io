@@ -25,7 +25,4 @@ title: 关于
 * QQ：85820767
 
 ---
-
-### Comments
-
 {% include comments.html %}
