@@ -16,7 +16,7 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 
-category_dir: category/
+category_dir: cate/
 tag_dir: tag/
 base-url: ""
 
