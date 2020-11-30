@@ -1,6 +1,5 @@
 ---
 layout: post
-date: 2016-05-24
 title: "构建 CEF"
 categories: 编译
 tags: CEF Build ninja chrome chromium VS2015

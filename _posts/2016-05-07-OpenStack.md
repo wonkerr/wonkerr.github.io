@@ -1,11 +1,19 @@
 ---
-layout: post
-date: 2016-05-07
-title: "OpenStack"
+layout:     post
 categories: 云计算
-tags: OpenStack Clouds
+title:      云计算：新时代的技术
+excerpt:    谷歌提出云计算后，各种云计算技术不断涌现，可以说是风起云涌，本文尝试浅析云计算
+tags:       
 ---
 
 * content
 {:toc}
+
+# 概念导入
+
+# 开源实现
+
+# 百家争鸣
+
+# 未来展望
 

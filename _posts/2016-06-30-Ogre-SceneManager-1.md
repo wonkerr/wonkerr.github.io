@@ -1,6 +1,5 @@
 ---
 layout: post
-date: 2016-06-30
 title: "Ogre 2.0 SceneNode 管理说明"
 categories: Ogre
 tags: SceneNode SceneManager

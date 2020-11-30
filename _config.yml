@@ -20,7 +20,7 @@ category_dir: cate/
 tag_dir: tag/
 base-url: ""
 
-excerpt_separator: "\n\n\n\n"
+excerpt_separator: '\n\n\n\n'
 
 gems: [jekyll-paginate]
 paginate: 8
