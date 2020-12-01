@@ -1,8 +1,8 @@
 ---
-layout: post
-title: "Ogre 2.0 SceneNode 管理说明"
-categories: Ogre
-tags: SceneNode SceneManager
+categories  : 渲染引擎
+excerpt     : 从 Ogre 一代升级到 Ogre 二代额外需要注意的东西
+title       : Ogre 2.0 SceneNode 管理说明
+tags        : Ogre SceneNode SceneManager
 ---
 
 * content
@@ -17,4 +17,3 @@ tags: SceneNode SceneManager
 
 ### ScneeNode 管理
     在 Ogre 2.0 中，SceneNode 不再是存储在 map 中，而是存储在数组中，在 SceneNode 中有 size_t mGlobalIndex，该属性用来表明此 SceneNode 在全局数组中的位置，可以用来快速定位，例如当删除一个 SceneNode 时，可以快速在数组中找到位置，然后将数组中其他地方的 SceneNode 替换当前位置
-

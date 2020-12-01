@@ -1,16 +1,14 @@
 ---
-layout: post
-title:  "磁盘阵列管理"
-date:   2016-05-01
-categories: NAS
-tags: RAID
+categories  : 网络存储
+title       : 磁盘阵列管理
+tags        : RAID
 ---
-
-这里是摘要内容
-<!-- more -->
 
 * content
 {:toc}
+
+这里是摘要内容
+<!--- more --->
 
 # 安装工具
 * 安装磁盘阵列管理工具和 LVM 系统

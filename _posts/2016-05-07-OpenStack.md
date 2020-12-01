@@ -1,8 +1,7 @@
 ---
-layout:     post
 categories: 云计算
-title:      云计算：新时代的技术
 excerpt:    谷歌提出云计算后，各种云计算技术不断涌现，可以说是风起云涌，本文尝试浅析云计算
+title:      云计算：新时代的技术
 tags:       
 ---
 

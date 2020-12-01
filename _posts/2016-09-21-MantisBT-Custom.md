@@ -1,9 +1,8 @@
 ---
-layout: post
-title:  "MantisBT 自定义"
-date:   2016-09-21
-categories: MantisBT
-tags: MantisBT Custom
+categories  : 任务管理
+excerpt     : 本文介绍如何在任务管理软件小螳螂中自定义角色
+title       : 任务管理：自定义角色、
+tags        : MantisBT Custom
 ---
 
 * content

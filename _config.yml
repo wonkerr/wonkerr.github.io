@@ -1,10 +1,9 @@
-﻿title: 阿科博客
+﻿title: 王志科
 email: Arctos@163.com
 brief-intro: Coder, Designer, Manager
-description_footer: 人生旅途美景，尽在无限想象
+description_footer: 积极向上 乐观生活 一切都将更美好
 
 github_username: wonkerr
-duoshuo_shortname: wonkerr
 
 url: http://wonkerr.github.io
 permalink: /:year/:month-:day/:title
@@ -20,7 +19,15 @@ category_dir: cate/
 tag_dir: tag/
 base-url: ""
 
-excerpt_separator: '\n\n\n\n'
+excerpt_separator: '<!--- more --->'
 
 gems: [jekyll-paginate]
 paginate: 8
+
+defaults:
+  -
+    scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: "post"

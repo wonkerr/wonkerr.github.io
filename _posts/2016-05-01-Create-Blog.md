@@ -1,9 +1,8 @@
 ---
-layout:     post
-categories: 博客
-excerpt:    开始使用免费的代码管理网址搭建静态博客，算是一个新的启航吧
-title:      启航：搭建静态博客
-tags:       blog github jekyll
+categories  : 博客
+excerpt     : 开始使用免费的代码管理网址搭建静态博客，算是一个新的启航吧
+title       : 启航：搭建静态博客
+tags        : blog github jekyll
 ---
 
 * content

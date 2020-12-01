@@ -1,8 +1,8 @@
 ---
-layout: post
-title: "构建 CEF"
-categories: 编译
-tags: CEF Build ninja chrome chromium VS2015
+categories  : 编译
+excerpt     : 
+title       : "构建 CEF"
+tags        : CEF Build ninja chrome chromium VS2015
 ---
 
 * content

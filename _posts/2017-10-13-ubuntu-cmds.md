@@ -1,9 +1,8 @@
 ---
-layout: post
-title:  "搭建静态博客"
-date:   2016-05-01
-categories: 博客
-tags: blog github jekyll
+categories  : 网络存储
+excerpt     : 本文介绍如何构建网络服务
+title       : 搭建网络存储服务
+tags        : NAS Service
 ---
 
 * content
