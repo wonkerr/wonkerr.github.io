@@ -19,14 +19,26 @@
                     font-size: 27px;
                     margin: 0;
                 }
+                .flex {
+                    display: flex;
+                }
                 .postdate {
                     width: 60px; 
+                    height: 66px;
                     margin: 7px 10px 12px 0px;
+                    border: 1px solid #A0A0A0;
+                    border-radius: 9px;
                     background-image: url('../imgs/bg.jpg');
-                    background-repeat: none;
+                    background-repeat: no-repeat;
                     p {
-                        text-align:center;
-                        margin:0;
+                        text-align: center;
+                        font-weight: bold;
+                        font-size: 1.1em;
+                        height: 49%;
+                        margin: 0;
+                    }
+                    .year {
+                        border-top: 1px solid #A0A0A0;
                     }
                 }
                 .label {

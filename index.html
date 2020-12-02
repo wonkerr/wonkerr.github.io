@@ -10,13 +10,13 @@ layout: default
         <ul>
           {% for post in paginator.posts %}
             <li>
-              <div style="display: flex;">
+              <div class="flex">
                 <div class="postdate">
-                  <p>{{ post.date | date: "%m %d" }}</p>
-                  <p>{{ post.date | date: "%Y" }}</p>
+                  <p class="days">{{ post.date | date: "%m-%d" }}</p>
+                  <p class="year">{{ post.date | date: "%Y" }}</p>
                 </div>
 
-                <div>
+                <div style="flex: 1">
                   <h2>
                     <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                   </h2>
@@ -24,39 +24,28 @@ layout: default
                   <div class="excerpt">
                     {{ post.excerpt | strip_html }}
                   </div>
-                </div>
-              </div>
 
-
-              <div style="display: flex; margin-left: 70px">
-                <div class="label" style="flex: 1">
-                  <div class="label-card">
-                    <i class="fa fa-calendar"></i>{{ post.date | date: "%F" }}
+                  <div class="flex">
+                    <div class="label" style="flex: 1">
+                      <div class="label-card">
+                          {% if post.author %}
+                            <i class="fa fa-user"></i>{{ post.author }}
+                          {% endif %}
+                      </div>
+                  
+                      <div class="label-card">
+                        {% include category.html %}
+                      </div>
+    
+                      <div class="label-card">
+                        {% include tag.html %}
+                      </div>
+                    </div>
+                  
+                    <div class="read-all">
+                      <a  href="{{ post.url | prepend: site.baseurl }}"><i class="fa fa-newspaper-o"></i>阅读全部</a>
+                    </div>
                   </div>
-              
-                  <div class="label-card">
-                      {% if post.author %}
-                        <i class="fa fa-user"></i>{{ post.author }}
-                      {% endif %}
-                  </div>
-              
-                  <div class="label-card">
-                      {% if page.meta %}
-                        <i class="fa fa-key"></i>{{ page.meta }}  
-                      {% endif %}
-                  </div>
-
-                  <div class="label-card">
-                    {% include category.html %}
-                  </div>
-
-                  <div class="label-card">
-                    {% include tag.html %}
-                  </div>
-                </div>
-              
-                <div class="read-all">
-                  <a  href="{{ post.url | prepend: site.baseurl }}"><i class="fa fa-newspaper-o"></i>阅读全部</a>
                 </div>
               </div>
               <hr>
