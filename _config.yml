@@ -1,7 +1,7 @@
 ﻿title: 王志科
 email: Arctos@163.com
 brief-intro: Coder, Designer, Manager
-description_footer: 积极向上 乐观生活 一切都将更美好
+description_footer: 积极向上　乐观生活　相信世界将更美好
 
 github_username: wonkerr
 
@@ -22,7 +22,7 @@ base-url: ""
 excerpt_separator: '<!--- more --->'
 
 gems: [jekyll-paginate]
-paginate: 8
+paginate: 10
 
 defaults:
   -
