@@ -12,20 +12,23 @@ layout: default
             </div>
 
             <div class="label-card">
-                {% if page.author %}<i class="fa fa-user"></i>{{ page.author }}
+                {% if page.author %}
+                    <i class="fa fa-user"></i>{{ page.author }}
                 {% endif %}
             </div>
 
             <div class="label-card">
-                {% if page.meta %}<i class="fa fa-key"></i>{{ page.meta }}  {% endif %}
+                {% if page.meta %}
+                    <i class="fa fa-key"></i>{{ page.meta }}
+                {% endif %}
             </div>
 
             <div class="label-card">
-            {% include category.html %}
+                {% include category.html %}
             </div>
 
             <div class="label-card">
-            {% include tag.html %}
+                {% include tag.html %}
             </div>
 
         </div>

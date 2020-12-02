@@ -8,43 +8,61 @@ layout: default
         <small>这是我的网上小屋</small>
         <hr>
         <ul>
-            {% for post in paginator.posts %}
-              <li>
-                <h2>
-                  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                </h2>
-                <div class="label">
-                    <div class="label-card">
-                        <i class="fa fa-calendar"></i>{{ post.date | date: "%F" }}
-                    </div>
-                    <div class="label-card">
-                        {% if post.author %}<i class="fa fa-user"></i>{{ post.author }}
-                        {% endif %}
-                    </div>
-                    <div class="label-card">
-                        {% if page.meta %}<i class="fa fa-key"></i>{{ page.meta }}  {% endif %}
-                    </div>
+          {% for post in paginator.posts %}
+            <li>
+              <div style="display: flex;">
+                <div class="postdate">
+                  <p>{{ post.date | date: "%m %d" }}</p>
+                  <p>{{ post.date | date: "%Y" }}</p>
+                </div>
 
-                    <div class="label-card">
+                <div>
+                  <h2>
+                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                  </h2>
+
+                  <div class="excerpt">
+                    {{ post.excerpt | strip_html }}
+                  </div>
+                </div>
+              </div>
+
+
+              <div style="display: flex; margin-left: 70px">
+                <div class="label" style="flex: 1">
+                  <div class="label-card">
+                    <i class="fa fa-calendar"></i>{{ post.date | date: "%F" }}
+                  </div>
+              
+                  <div class="label-card">
+                      {% if post.author %}
+                        <i class="fa fa-user"></i>{{ post.author }}
+                      {% endif %}
+                  </div>
+              
+                  <div class="label-card">
+                      {% if page.meta %}
+                        <i class="fa fa-key"></i>{{ page.meta }}  
+                      {% endif %}
+                  </div>
+
+                  <div class="label-card">
                     {% include category.html %}
-                    </div>
+                  </div>
 
-                    <div class="label-card">
+                  <div class="label-card">
                     {% include tag.html %}
-                    </div>
+                  </div>
                 </div>
-                <div class="excerpt">
-                    {{post.excerpt}}
-                </div>
+              
                 <div class="read-all">
-                    <a  href="{{ post.url | prepend: site.baseurl }}"><i class="fa fa-newspaper-o"></i>阅读全部</a>
+                  <a  href="{{ post.url | prepend: site.baseurl }}"><i class="fa fa-newspaper-o"></i>阅读全部</a>
                 </div>
-                <hr>
-              </li>
-            {% endfor %}
+              </div>
+              <hr>
+            </li>
+          {% endfor %}
         </ul>
-
-
 
         <!-- Pagination links -->
         <div class="pagination">

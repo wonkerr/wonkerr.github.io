@@ -27,7 +27,8 @@ paginate: 8
 defaults:
   -
     scope:
-      path: "_posts"
-      type: "posts"
+      path: _posts
+      type: posts
     values:
-      layout: "post"
+      author: 王志科
+      layout: post

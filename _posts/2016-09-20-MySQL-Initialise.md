@@ -1,7 +1,7 @@
 ---
-categories  : 数据库
+categories  : 数据仓库
 excerpt     : 
-title       : MySQL 初始化
+title       : MySQL 数据库安装、配置、初始化
 tags        : Database MySQL
 ---
 

@@ -19,8 +19,18 @@
                     font-size: 27px;
                     margin: 0;
                 }
+                .postdate {
+                    width: 60px; 
+                    margin: 7px 10px 12px 0px;
+                    background-image: url('../imgs/bg.jpg');
+                    background-repeat: none;
+                    p {
+                        text-align:center;
+                        margin:0;
+                    }
+                }
                 .label {
-                    margin-bottom: 15px;
+                    margin-bottom: 2px;
                     overflow: hidden;
                     .label-card {
                         float: left;
