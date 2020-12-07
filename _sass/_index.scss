@@ -57,17 +57,6 @@
                         padding: 0;
                     }
                 }
-                .excerpt {
-                    h2 {
-                        font-size: 20px;
-                    }
-                    h3 {
-                        font-size: 20px;
-                    }
-                    h4 {
-                        font-size: 20px;
-                    }
-                }
                 .read-all {
                     text-align: right;
                     font-size: 14px;
@@ -86,16 +75,37 @@
         }
         .pagination {
             text-align: center;
-            .previous,
-            .next {
-                font-size: 20px;
-                padding: 0 5px;
-            }
-            .page_number {
-                padding: 0 5px;
-            }
-            .disable {
-                color: #cbcbcb;
+            margin: 0 auto;
+
+            ul {
+                border: 1px solid #aaa;
+                display: inline-block;
+                word-spacing: -11px;
+                border-radius: 4px;
+                list-style: none;
+                padding: 0px;
+                margin: 0px;
+                
+                .disable {
+                    color: #cbcbcb;
+                    cursor: default;
+                }
+
+                .prev, .page {
+                    border-right: 1px solid #aaa;
+                }
+
+                li {
+                    display: inline;
+                }
+                
+                span, a {
+                    position: relative;
+                    padding: 5px 11px;
+                    &:hover {
+                        background-color: rgba(0,0,0,.05);
+                    }
+                }
             }
         }
     }

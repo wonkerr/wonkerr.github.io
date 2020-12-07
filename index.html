@@ -55,23 +55,33 @@ layout: default
 
         <!-- Pagination links -->
         <div class="pagination">
-          {% if paginator.previous_page %}
-            <a href="/index.html" class="previous"><i class="fa fa-angle-double-left"></i></a>
-            <a href="{{ paginator.previous_page_path }}" class="previous"><i class="fa fa-angle-left"></i></a>
-          {% else %}
-            <span class="previous disable"><i class="fa fa-angle-double-left"></i></span>
-            <span class="previous disable"><i class="fa fa-angle-left"></i></span>
-          {% endif %}
-          <span class="page_number ">{{ paginator.page }}/{{ paginator.total_pages }}</span>
-          {% if paginator.next_page %}
-            <a href="{{ paginator.next_page_path }}" class="next"><i class="fa fa-angle-right"></i></a>
-            <a href="/page{{ paginator.total_pages }}" class="next"><i class="fa fa-angle-double-right"></i></a>
-          {% else %}
-            <span class="next disable"><i class="fa fa-angle-right"></i></span>
-            <span class="next disable"><i class="fa fa-angle-double-right"></i></span>
-          {% endif %}
+          <ul>
+            {% if paginator.previous_page %}
+              <li><a href="/index.html" class="prev">首页</a></li>
+            {% else %}
+              <li><span class="prev disable">首页</span></li>
+            {% endif %}
+
+            <!--span class="page_number ">{{ paginator.page }}/{{ paginator.total_pages }}</span-->
+
+            {% for page in (1..paginator.total_pages) %}
+              {% if page == paginator.page %}
+                <li><span class="page disable">{{ page }}</span></li>
+              {% elsif page == 1 %}
+                <li><a class="page" href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a></li>
+              {% else %}
+                <li><a class="page" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
+              {% endif %}
+            {% endfor %}
+
+            {% if paginator.next_page %}
+              <li><a href="/page{{ paginator.total_pages }}" class="next">末页</a></li>
+            {% else %}
+              <li><span class="next disable">末页</span></li>
+            {% endif %}
+          </ul>
         </div>
-    </div>
+      </div>
     <!-- <button class="anchor"><i class="fa fa-anchor"></i></button> -->
     <div class="right">
         <div class="wrap">
