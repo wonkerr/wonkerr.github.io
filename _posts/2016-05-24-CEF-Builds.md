@@ -1,7 +1,7 @@
 ---
 categories  : 编译
-excerpt     : 
-title       : "构建 CEF"
+excerpt     : 本文介绍如何本地构建 CEF3
+title       : 构建 CEF
 tags        : CEF Build ninja chrome chromium VS2015
 ---
 
