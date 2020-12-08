@@ -66,11 +66,11 @@ layout: default
 
             {% for page in (1..paginator.total_pages) %}
               {% if page == paginator.page %}
-                <li><span class="page disable">{{ page }}</span></li>
+                <li><span class="nums disable">{{ page }}</span></li>
               {% elsif page == 1 %}
-                <li><a class="page" href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a></li>
+                <li><a class="nums" href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a></li>
               {% else %}
-                <li><a class="page" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
+                <li><a class="nums" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
               {% endif %}
             {% endfor %}
 

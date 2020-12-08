@@ -91,7 +91,7 @@
                     cursor: default;
                 }
 
-                .prev, .page {
+                .prev, .nums {
                     border-right: 1px solid #aaa;
                 }
 
@@ -100,7 +100,6 @@
                 }
                 
                 span, a {
-                    position: relative;
                     padding: 5px 11px;
                     &:hover {
                         background-color: rgba(0,0,0,.05);
