@@ -80,7 +80,7 @@
             ul {
                 border: 1px solid #aaa;
                 display: inline-block;
-                word-spacing: -11px;
+                word-spacing: -10px;
                 border-radius: 4px;
                 list-style: none;
                 padding: 0px;
@@ -96,11 +96,13 @@
                 }
 
                 li {
-                    display: inline;
+                    display: inline-block;
                 }
                 
                 span, a {
-                    padding: 5px 11px;
+                    display: inline-block;
+                    padding: 3px 9px;
+                    min-width: 28px;
                     &:hover {
                         background-color: rgba(0,0,0,.05);
                     }
