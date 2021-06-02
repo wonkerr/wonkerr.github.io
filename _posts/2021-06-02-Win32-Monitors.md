@@ -8,7 +8,7 @@ tags        : Win32 Monitor DisplayDevice
 * content
 {:toc}
 
-### 1、获取显示器的数量与屏幕尺寸
+### 1、获取显示器的数量与尺寸
 简单的获取屏幕的宽高
 
 ``` C++
@@ -29,7 +29,7 @@ tags        : Win32 Monitor DisplayDevice
 	INT Height = GetSystemMetrics( SM_CYVIRTUALSCREEN );
 ``` 
 
-### 2、枚举监视器并获取监视器信息
+### 2、枚举监视器并获取信息
 
 ``` C++
 ///-----------------------------------------------------------------------------
