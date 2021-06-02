@@ -14,20 +14,20 @@ tags        :
 ``` C++
 	INT Width = GetSystemMetrics( SM_CXSCREEN );
 	INT Height = GetSystemMetrics( SM_CYSCREEN );
-```
+``` 
 
 获取显示器的数量
 
 ``` C++
 	INT Numbers = GetSystemMetrics( SM_CMONITORS );
-```
+``` 
 
 获取所有显示器的逻辑外接矩形
 
 ``` C++
 	INT Width = GetSystemMetrics( SM_CXVIRTUALSCREEN );
 	INT Height = GetSystemMetrics( SM_CYVIRTUALSCREEN );
-```
+``` 
 
 ### 2、枚举监视器并获取监视器信息
 
@@ -125,4 +125,4 @@ void MyMonitorEnumFunction( void )
 
 }
 
-```
+``` 
