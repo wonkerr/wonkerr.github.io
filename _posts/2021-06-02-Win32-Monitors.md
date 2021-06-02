@@ -2,7 +2,7 @@
 categories  : 博客
 excerpt     : 获取所有显示器的参数，包括使用枚举函数获取显示器信息
 title       : 通过系统函数获取多个显示器的信息与参数
-tags        : 
+tags        : Win32 Monitor DisplayDevice
 ---
 
 * content
@@ -12,26 +12,33 @@ tags        :
 简单的获取屏幕的宽高
 
 ``` C++
+
 	INT Width = GetSystemMetrics( SM_CXSCREEN );
 	INT Height = GetSystemMetrics( SM_CYSCREEN );
+
 ``` 
 
 获取显示器的数量
 
 ``` C++
+
 	INT Numbers = GetSystemMetrics( SM_CMONITORS );
+
 ``` 
 
 获取所有显示器的逻辑外接矩形
 
 ``` C++
+
 	INT Width = GetSystemMetrics( SM_CXVIRTUALSCREEN );
 	INT Height = GetSystemMetrics( SM_CYVIRTUALSCREEN );
+
 ``` 
 
 ### 2、枚举监视器并获取监视器信息
 
 ``` C++
+
 ///-----------------------------------------------------------------------------
 struct Win32_MonitorInfo : public MONITORINFO
 {
@@ -71,7 +78,7 @@ void MyMonitorEnumFunction( void )
     // ...
 }
 
-```
+``` 
 
 注意该方法获取的监视器中给出的屏幕尺寸是逻辑尺寸，例如 4K 显示器设置了 150% 的放缩比例，那么获取的 rcMonitor 和 rcWork 里面的宽高是 2560 * 1440; 
 如果要获取真实的分辨率参数，那么可以使用下面的方法
